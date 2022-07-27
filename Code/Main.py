@@ -10,5 +10,6 @@ print(df.head())
 print(df['cut'].unique())
 #Yields ->
 #array(['Ideal', 'Premium', 'Good', 'Very Good', 'Fair'], dtype=object)
+cut_class_dict = {"Fair": 1, "Good": 2, "Very Good": 3, "Premium": 4, "Ideal": 5}
 
 
