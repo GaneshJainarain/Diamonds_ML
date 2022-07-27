@@ -72,3 +72,11 @@ print(df.head())
 ```python
 pip install scikit-learn
 ```
+## Picking a machine learning model
+- Often the hardest part of solving a machine learning problem can be finding the right estimator for the job.
+- Different estimators are better suited for different types of data and different problems.
+- The flowchart below is designed to give users a bit of a rough guide on how to approach problems with regard to which estimators to try on your data.
+![Choosing the right estimator Flowchart](Code/OutputsForFile/Estimator.png)
+
+
+
