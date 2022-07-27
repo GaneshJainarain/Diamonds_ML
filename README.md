@@ -61,7 +61,14 @@ print(df.head())
 - Our DataFrame before and after our changes notice the 'cut', 'clarity, & 'color' columns
 ![Second Link to Before and After Data](Code/OutputsForFile/DataFrameAfterNumChange.png)
 
-# Training a Linear Regression model 
+# Step 2: Training a Linear Regression model 
 - *NOTE* This will be a supervised learning task 
     - With supervised learning, your job will pretty much always be the same. You take the data you want to use to make a prediction, and separate it out into an array. Then you take the data you want to predict, and separate that out into another array.
     - Then, you feed the data you want to use to make the prediction (features) and then the correct values that you want to build a model to learn to map to (your labels) into some type of model.
+
+## Everything we need to handle Linear Regression
+- Scikit-learn is a popular package used for doing regular machine learning
+- Installing Scikit-learn:
+```python
+pip install scikit-learn
+```
