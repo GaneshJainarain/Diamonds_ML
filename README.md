@@ -76,6 +76,7 @@ pip install scikit-learn
 - Often the hardest part of solving a machine learning problem can be finding the right estimator for the job.
 - Different estimators are better suited for different types of data and different problems.
 - The flowchart below is designed to give users a bit of a rough guide on how to approach problems with regard to which estimators to try on your data.
+- [Choosing the right estimator Flowchart]("https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html")
 ![Choosing the right estimator Flowchart](Code/OutputsForFile/Estimator.png)
 
 
