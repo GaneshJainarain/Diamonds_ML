@@ -24,7 +24,7 @@ This classic dataset contains the prices and other attributes of almost 54,000 d
 df = pd.read_csv("/Users/richeyjay/Desktop/Diamonds_ML/venv/Code/diamonds.csv", index_col=0)
 print(df.head())
 ```
-![First Link to Familiar data](OutputsForFile/GettingStartedWithOurData.png)
+![First Link to Familiar data](Code/OutputsForFile/GettingStartedWithOurData.png)
 - Notice how we have columns with string values like 'clarity' and 'cut'
 - Machine learning uses math so these columns must be converted into numbers 
 
@@ -59,4 +59,4 @@ df['color'] = df['color'].map(color_dict)
 print(df.head())
 ```
 - Our DataFrame before and after our changes notice the 'cut', 'clarity, & 'color' columns
-![Second Link to Before and After Data](OutputsForFile/DataFrameAfterNumChange.png)
+![Second Link to Before and After Data](Code/OutputsForFile/DataFrameAfterNumChange.png)
