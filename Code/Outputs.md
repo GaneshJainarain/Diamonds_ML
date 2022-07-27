@@ -4,7 +4,7 @@
 df = pd.read_csv("/Users/richeyjay/Desktop/Diamonds_ML/venv/Code/diamonds.csv", index_col=0)
 print(df.head())
 ```
-![First Link to Familiar data](GettingStartedWithOurData.png)
+![First Link to Familiar data](OutputsForFile/GettingStartedWithOurData.png)
 - Notice how we have columns with string values like 'clarity' and 'cut'
 - Machine learning uses math so these columns must be converted into numbers 
 
@@ -31,3 +31,12 @@ cut_class_dict = {"Fair": 1, "Good": 2, "Very Good": 3, "Premium": 4, "Ideal": 5
 clarity_dict = {"I3": 1, "I2": 2, "I1": 3, "SI2": 4, "SI1": 5, "VS2": 6, "VS1": 7, "VVS2": 8, "VVS1": 9, "IF": 10, "FL": 11}
 color_dict = {"J": 1,"I": 2,"H": 3,"G": 4,"F": 5,"E": 6,"D": 7}
 ```
+- Now we map these values to their respective columns in our data frame (df)
+```python
+df['cut'] = df['cut'].map(cut_class_dict)
+df['clarity'] = df['clarity'].map(clarity_dict)
+df['color'] = df['color'].map(color_dict)
+print(df.head())
+```
+- Our DataFrame before and after our changes notice the 'cut', 'clarity, & 'color' columns
+![Second Link to Before and After Data](OutputsForFile/DataFrameAfterNumChange.png)
