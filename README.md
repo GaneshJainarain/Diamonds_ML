@@ -81,7 +81,8 @@ pip install scikit-learn
 ![Choosing the right estimator Flowchart](Code/OutputsForFile/Estimator.png)
 
 - If we go by the estimator flow chart we see that our dataset is larger than 50 samples and we are predicting a category which in this case is actually a quantity(the price of diamonds), and our dataset is less than 100 thousand samples so we should go with am SGD Regressor(Stochastic Gradient Descent)
-- SGD Regressor(Stochastic Gradient Descent)
+- SGD Regressor(Stochastic Gradient Descent) this model will take our input features, make them into variables that will be used in an equation to get as close as possible to outputting whatever trained values we pass. Later, we can either save some samples for true out of sample testing, or just make some up to see what the model says would be the price of the diamond.
+- 
 
 
 
