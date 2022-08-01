@@ -95,5 +95,16 @@ df = sklearn.utils.shuffle(df)
 X = df.drop("price", axis=1).values
 y = df["price"].values
 ```
+- Recall that many methods will return a data-frame. So for X we want all of the columns EXCEPT for the price one, so we can just drop it. Then we use .values to convert to a numpy array. Then, for our labels, y, we say this is just the price column's values. 
 
+## Saving some of these values for testing the model after it's been trained. 
+```python
+test_size = 200
+
+X_train = X[:-test_size]
+y_train = y[:-test_size]
+
+X_test = X[-test_size:]
+y_test = y[-test_size:]
+```
 

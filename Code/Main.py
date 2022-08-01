@@ -1,4 +1,7 @@
 import pandas as pd
+import sklearn
+from sklearn import svm, preprocessing
+
 
 # Step 1: Getting Familiar with our Data
 # We import pandas and read in the dataset
@@ -38,3 +41,24 @@ df['clarity'] = df['clarity'].map(clarity_dict)
 df['color'] = df['color'].map(color_dict)
 print(df.head())
 
+df = sklearn.utils.shuffle(df) 
+#always shuffle your data to avoid any biases that may emerge b/c of some order.
+X = df.drop("price", axis=1).values
+X = preprocessing.scale(X)
+y = df["price"].values
+
+test_size = 200
+
+X_train = X[:-test_size]
+y_train = y[:-test_size]
+
+X_test = X[-test_size:]
+y_test = y[-test_size:]
+
+clf = svm.SVR()
+
+clf.fit(X_train, y_train)
+print(clf.score(X_test, y_test))
+
+for X,y in list(zip(X_test, y_test))[:10]:
+    print(f"model predicts {clf.predict([X])[0]}, real value: {y}")
